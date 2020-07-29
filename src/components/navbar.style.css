@@ -1,0 +1,86 @@
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    padding-top: 20px;
+}
+
+.burger-icon{
+    width: 80px;
+    height: 60px;
+    background-image: url(../assets/20-208533_hd-menu-icon-burger-menu-icon-png-transparent.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-grow: 0;
+    outline: none;
+    border: none;
+}
+
+.burger-icon:focus{
+    outline: none;
+}
+
+.navbar-logo{
+    margin-left: 100px;
+    float: right;
+    background-color: saddlebrown;
+    height: inherit;
+    width: 100px;
+    flex-grow: 4;
+}
+
+.offcanvas-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    height: 100vh;
+    width: 300px;
+    background-color: #373a47;
+}
+
+.close-menu-icon{
+    background-color: lightcoral;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    font-size: 0px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.close-menu-icon:focus{
+    outline: none;
+}
+
+.close-menu-container{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+    background-image: url(../assets/close-icon3.png);
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@keyframes slide {
+    from {width: 0px;}
+    to {width: 300px;}
+}
+
+@keyframes reverse-slide {
+    from {width: 300px;}
+    to {width: 0;}
+}
