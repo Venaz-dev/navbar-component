@@ -1,6 +1,6 @@
 body{
     transition: 0.5s;
-    
+    background: #b4bad2;
 }
 
 .navBar{
@@ -32,30 +32,32 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #259EF8;
+    background: #373a47;
     overflow-x: hidden;
     transition: 0.5s;
-    
     z-index: 3;
   }
 .sidenavinner {
     width: 100%;
     height: 100%;
     padding-top: 30%;
+    margin-left: 20px;
 }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    display: block;
+    transition: transform 0.8s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+    padding: 0.8em;
     text-decoration: none;
     font-size: 25px;
-    color: #D9E2E8;
+    color: #b8b7ad;
     display: block;
     transition: 0.3s;
     
   }
   
   .sidenav a:hover {
-    color: #fff;
+    color: #f34040;
   }
   
   .sidenav .closebtn {
@@ -82,13 +84,10 @@ body{
   span#burgerMenu{
       margin-left: 10%;
       transition: 0.5s;
-      color: #259EF8;
+      color: #3b3b3a;;
   }
   
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
+  
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
